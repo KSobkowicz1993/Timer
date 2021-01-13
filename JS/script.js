@@ -7,17 +7,11 @@ setInterval(() => {
     let min = date.getMinutes();
     let sec = date.getSeconds();
 
-    if (hour < 10) {
-        hour = `0${hour}`;
-    } 
+    if (hour < 10) hour = `0${hour}`;
 
-    if (min < 10) {
-        min = `0${min}`;
-    }
+    if (min < 10) min = `0${min}`;
 
-    if (sec < 10) {
-        sec = `0${sec}`;
-    }
+    if (sec < 10) sec = `0${sec}`;
 
     document.querySelector('#timer').innerText = `${hour}:${min}:${sec}`;
 
